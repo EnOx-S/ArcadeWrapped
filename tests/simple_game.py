@@ -1,5 +1,5 @@
 import arcade
-from arcadewrapper import Engine, Entity, Scene
+from arcadewrapped import Engine, Entity, Scene
 
 
 class Player(Entity):

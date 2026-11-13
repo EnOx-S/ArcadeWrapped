@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "arcadewrapper"
+name = "arcadewrapped"
 version = "0.1.0"
 description = "A lightweight object-oriented game engine wrapper around Python Arcade."
 readme = "README.md"
@@ -11,6 +11,12 @@ requires-python = ">=3.9"
 dependencies = [
     "arcade>=2.6.0",
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [project.optional-dependencies]
 dev = [

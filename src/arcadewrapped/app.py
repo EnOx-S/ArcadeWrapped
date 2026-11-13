@@ -4,13 +4,12 @@ import arcade
 
 from .scene import Scene
 
-
 class Engine(arcade.Window):
     def __init__(
         self,
         width: int = 800,
         height: int = 600,
-        title: str = "ArcadeWrapper Game",
+        title: str = "ArcadeWrapped Game",
         bg_color: tuple[int, int, int] = (20, 24, 30),
     ):
         super().__init__(width, height, title)
